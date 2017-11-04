@@ -11,6 +11,9 @@
 		FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28183E1FADDE94002C1E26 /* AppDelegate.swift */; };
 		FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */; };
 		FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2818481FADDE94002C1E26 /* Assets.xcassets */; };
+		FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E11FADE6C200D8CE0A /* Info.plist */; };
+		FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */; };
+		FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +24,9 @@
 		FC28183E1FADDE94002C1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2818461FADDE94002C1E26 /* DinnerSpinner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DinnerSpinner.xcdatamodel; sourceTree = "<group>"; };
 		FC2818481FADDE94002C1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC28184D1FADDE94002C1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE4C1E11FADE6C200D8CE0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +93,8 @@
 		FCE4C1DA1FADE30200D8CE0A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4C1E11FADE6C200D8CE0A /* Info.plist */,
 				FC2818481FADDE94002C1E26 /* Assets.xcassets */,
-				FC28184D1FADDE94002C1E26 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 		FCE4C1DB1FADE33100D8CE0A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 			children = (
 				FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */,
 				FC28183E1FADDE94002C1E26 /* AppDelegate.swift */,
+				FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -200,7 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */,
+				FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */,
 				FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */,
+				FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQD2Q9TDCS;
-				INFOPLIST_FILE = DinnerSpinner/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.digithio.DinnerSpinner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQD2Q9TDCS;
-				INFOPLIST_FILE = DinnerSpinner/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.digithio.DinnerSpinner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
