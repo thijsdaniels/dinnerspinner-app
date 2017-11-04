@@ -19,6 +19,11 @@
 		FCE4C1EF1FADEE8F00D8CE0A /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */; };
 		FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */; };
 		FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */; };
+		FCE4C1FA1FADF82500D8CE0A /* DSRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F81FADF82500D8CE0A /* DSRecipeTableViewCell.swift */; };
+		FCE4C1FB1FADF82500D8CE0A /* DSRecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1F91FADF82500D8CE0A /* DSRecipeTableViewCell.xib */; };
+		FCE4C1FF1FADF97900D8CE0A /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1FE1FADF97900D8CE0A /* burger.jpg */; };
+		FCE4C2021FADFC5300D8CE0A /* DSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */; };
+		FCE4C2041FADFCA300D8CE0A /* DSRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingList.storyboard; sourceTree = "<group>"; };
 		FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEditRecipeViewController.swift; sourceTree = "<group>"; };
 		FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRecipesListViewController.swift; sourceTree = "<group>"; };
+		FCE4C1F81FADF82500D8CE0A /* DSRecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRecipeTableViewCell.swift; sourceTree = "<group>"; };
+		FCE4C1F91FADF82500D8CE0A /* DSRecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSRecipeTableViewCell.xib; sourceTree = "<group>"; };
+		FCE4C1FE1FADF97900D8CE0A /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = burger.jpg; path = ../../../../../Desktop/burger.jpg; sourceTree = "<group>"; };
+		FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRatingView.swift; sourceTree = "<group>"; };
+		FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSRatingView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,7 @@
 		FCE4C1DA1FADE30200D8CE0A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4C1FE1FADF97900D8CE0A /* burger.jpg */,
 				FCE4C1E11FADE6C200D8CE0A /* Info.plist */,
 				FC2818481FADDE94002C1E26 /* Assets.xcassets */,
 			);
@@ -112,6 +123,8 @@
 		FCE4C1DB1FADE33100D8CE0A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4C2001FADFC1B00D8CE0A /* CommonViews */,
+				FCE4C1F61FADF7F300D8CE0A /* CommonCells */,
 				FCE4C1E91FADEDB500D8CE0A /* ShoppingList */,
 				FCE4C1E81FADEDB300D8CE0A /* Plan */,
 				FCE4C1E71FADEDB100D8CE0A /* Recipes */,
@@ -184,6 +197,32 @@
 			path = ShoppingList;
 			sourceTree = "<group>";
 		};
+		FCE4C1F61FADF7F300D8CE0A /* CommonCells */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4C1F71FADF80B00D8CE0A /* RecipeCell */,
+			);
+			path = CommonCells;
+			sourceTree = "<group>";
+		};
+		FCE4C1F71FADF80B00D8CE0A /* RecipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4C1F81FADF82500D8CE0A /* DSRecipeTableViewCell.swift */,
+				FCE4C1F91FADF82500D8CE0A /* DSRecipeTableViewCell.xib */,
+			);
+			path = RecipeCell;
+			sourceTree = "<group>";
+		};
+		FCE4C2001FADFC1B00D8CE0A /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */,
+				FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +289,9 @@
 				FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */,
 				FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */,
 				FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */,
+				FCE4C2041FADFCA300D8CE0A /* DSRatingView.xib in Resources */,
+				FCE4C1FB1FADF82500D8CE0A /* DSRecipeTableViewCell.xib in Resources */,
+				FCE4C1FF1FADF97900D8CE0A /* burger.jpg in Resources */,
 				FCE4C1ED1FADEE7E00D8CE0A /* Plan.storyboard in Resources */,
 				FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */,
 				FCE4C1EB1FADEE5A00D8CE0A /* Recipes.storyboard in Resources */,
@@ -283,6 +325,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageViewer/ImageViewer.framework",
 			);
@@ -290,6 +333,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageViewer.framework",
 			);
@@ -323,10 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE4C2021FADFC5300D8CE0A /* DSRatingView.swift in Sources */,
 				FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
 				FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */,
+				FCE4C1FA1FADF82500D8CE0A /* DSRecipeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
