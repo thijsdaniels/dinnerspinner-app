@@ -19,6 +19,7 @@
 		FCE4C1EF1FADEE8F00D8CE0A /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */; };
 		FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */; };
 		FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */; };
+		FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingList.storyboard; sourceTree = "<group>"; };
 		FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEditRecipeViewController.swift; sourceTree = "<group>"; };
 		FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRecipesListViewController.swift; sourceTree = "<group>"; };
+		FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSApplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */,
 				FC28183E1FADDE94002C1E26 /* AppDelegate.swift */,
 				FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */,
+				FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
+				FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */,
 				FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

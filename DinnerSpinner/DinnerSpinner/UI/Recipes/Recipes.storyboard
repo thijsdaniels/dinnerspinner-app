@@ -44,7 +44,7 @@
                         <viewLayoutGuide key="safeArea" id="5bH-Mu-0kq"/>
                     </view>
                     <navigationItem key="navigationItem" id="uUB-es-iC6">
-                        <barButtonItem key="rightBarButtonItem" title="+ new" style="plain" id="svh-Hg-PiS">
+                        <barButtonItem key="rightBarButtonItem" title="+ new" id="svh-Hg-PiS">
                             <connections>
                                 <action selector="addBarButtonItemPressed:" destination="jQB-kZ-SBo" id="env-Vk-DHW"/>
                                 <segue destination="2oZ-fM-W6g" kind="presentation" identifier="addRecipeSegue" modalTransitionStyle="flipHorizontal" id="CB2-Uh-hk8"/>
