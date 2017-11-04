@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F267D67621504A0A9E0A3294 /* Pods_DinnerSpinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */; };
 		FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28183E1FADDE94002C1E26 /* AppDelegate.swift */; };
-		FC2818411FADDE94002C1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2818401FADDE94002C1E26 /* ViewController.swift */; };
-		FC2818441FADDE94002C1E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2818421FADDE94002C1E26 /* Main.storyboard */; };
 		FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */; };
 		FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2818481FADDE94002C1E26 /* Assets.xcassets */; };
-		FC28184C1FADDE94002C1E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC28184A1FADDE94002C1E26 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinnerSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654EEB5ECE03E03250C430D6 /* Pods-DinnerSpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerSpinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner.debug.xcconfig"; sourceTree = "<group>"; };
+		B8320486509F31FE85DC3335 /* Pods-DinnerSpinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerSpinner.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner.release.xcconfig"; sourceTree = "<group>"; };
 		FC28183B1FADDE94002C1E26 /* DinnerSpinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinnerSpinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC28183E1FADDE94002C1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC2818401FADDE94002C1E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC2818431FADDE94002C1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC2818461FADDE94002C1E26 /* DinnerSpinner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DinnerSpinner.xcdatamodel; sourceTree = "<group>"; };
 		FC2818481FADDE94002C1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC28184B1FADDE94002C1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC28184D1FADDE94002C1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,17 +29,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F267D67621504A0A9E0A3294 /* Pods_DinnerSpinner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAC396E9789F5FBCB757F4C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0811488478D5DB843A09604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				654EEB5ECE03E03250C430D6 /* Pods-DinnerSpinner.debug.xcconfig */,
+				B8320486509F31FE85DC3335 /* Pods-DinnerSpinner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC2818321FADDE94002C1E26 = {
 			isa = PBXGroup;
 			children = (
 				FC28183D1FADDE94002C1E26 /* DinnerSpinner */,
 				FC28183C1FADDE94002C1E26 /* Products */,
+				F0811488478D5DB843A09604 /* Pods */,
+				AAC396E9789F5FBCB757F4C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,68 @@
 		FC28183D1FADDE94002C1E26 /* DinnerSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				FC28183E1FADDE94002C1E26 /* AppDelegate.swift */,
-				FC2818401FADDE94002C1E26 /* ViewController.swift */,
-				FC2818421FADDE94002C1E26 /* Main.storyboard */,
-				FC2818481FADDE94002C1E26 /* Assets.xcassets */,
-				FC28184A1FADDE94002C1E26 /* LaunchScreen.storyboard */,
-				FC28184D1FADDE94002C1E26 /* Info.plist */,
-				FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */,
+				FCE4C1E01FADE40300D8CE0A /* Application */,
+				FCE4C1DF1FADE37B00D8CE0A /* Subclasses */,
+				FCE4C1DE1FADE36400D8CE0A /* Extensions */,
+				FCE4C1DD1FADE34E00D8CE0A /* Managers */,
+				FCE4C1DC1FADE34400D8CE0A /* Helpers */,
+				FCE4C1DB1FADE33100D8CE0A /* UI */,
+				FCE4C1DA1FADE30200D8CE0A /* Resources */,
 			);
 			path = DinnerSpinner;
+			sourceTree = "<group>";
+		};
+		FCE4C1DA1FADE30200D8CE0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC2818481FADDE94002C1E26 /* Assets.xcassets */,
+				FC28184D1FADDE94002C1E26 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCE4C1DB1FADE33100D8CE0A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FCE4C1DC1FADE34400D8CE0A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FCE4C1DD1FADE34E00D8CE0A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FCE4C1DE1FADE36400D8CE0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCE4C1DF1FADE37B00D8CE0A /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		FCE4C1E01FADE40300D8CE0A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */,
+				FC28183E1FADDE94002C1E26 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2818501FADDE94002C1E26 /* Build configuration list for PBXNativeTarget "DinnerSpinner" */;
 			buildPhases = (
+				A0666405AAE5D64A23B2F69D /* [CP] Check Pods Manifest.lock */,
 				FC2818371FADDE94002C1E26 /* Sources */,
 				FC2818381FADDE94002C1E26 /* Frameworks */,
 				FC2818391FADDE94002C1E26 /* Resources */,
+				80E469C7F97C7F55E14FF68C /* [CP] Embed Pods Frameworks */,
+				25CBCF7E4FF3018A48904C33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,13 +200,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC28184C1FADDE94002C1E26 /* LaunchScreen.storyboard in Resources */,
 				FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */,
-				FC2818441FADDE94002C1E26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25CBCF7E4FF3018A48904C33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E469C7F97C7F55E14FF68C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageViewer/ImageViewer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageViewer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0666405AAE5D64A23B2F69D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinnerSpinner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC2818371FADDE94002C1E26 /* Sources */ = {
@@ -140,31 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */,
-				FC2818411FADDE94002C1E26 /* ViewController.swift in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FC2818421FADDE94002C1E26 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC2818431FADDE94002C1E26 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC28184A1FADDE94002C1E26 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC28184B1FADDE94002C1E26 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FC28184E1FADDE94002C1E26 /* Debug */ = {
@@ -276,6 +388,7 @@
 		};
 		FC2818511FADDE94002C1E26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654EEB5ECE03E03250C430D6 /* Pods-DinnerSpinner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +404,7 @@
 		};
 		FC2818521FADDE94002C1E26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8320486509F31FE85DC3335 /* Pods-DinnerSpinner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
