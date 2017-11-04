@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAD9D08C1FADFBE80044801F /* DSNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D08A1FADFBE80044801F /* DSNameCell.swift */; };
+		AAD9D08D1FADFBE80044801F /* DSNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D08B1FADFBE80044801F /* DSNameCell.xib */; };
+		AAD9D0901FADFC410044801F /* DSImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D08E1FADFC410044801F /* DSImageCell.swift */; };
+		AAD9D0911FADFC410044801F /* DSImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D08F1FADFC410044801F /* DSImageCell.xib */; };
+		AAD9D0941FADFC5C0044801F /* DSRequirementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D0921FADFC5C0044801F /* DSRequirementsCell.swift */; };
+		AAD9D0951FADFC5C0044801F /* DSRequirementsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D0931FADFC5C0044801F /* DSRequirementsCell.xib */; };
+		AAD9D0981FADFC870044801F /* DSDirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D0961FADFC870044801F /* DSDirectionsCell.swift */; };
+		AAD9D0991FADFC870044801F /* DSDirectionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D0971FADFC870044801F /* DSDirectionsCell.xib */; };
+		AAD9D09C1FADFCA70044801F /* DurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D09A1FADFCA70044801F /* DurationCell.swift */; };
+		AAD9D09D1FADFCA70044801F /* DurationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D09B1FADFCA70044801F /* DurationCell.xib */; };
+		AAD9D0A01FADFCCC0044801F /* DSDifficultyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D09E1FADFCCC0044801F /* DSDifficultyCell.swift */; };
+		AAD9D0A11FADFCCC0044801F /* DSDifficultyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D09F1FADFCCC0044801F /* DSDifficultyCell.xib */; };
 		F267D67621504A0A9E0A3294 /* Pods_DinnerSpinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */; };
 		FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28183E1FADDE94002C1E26 /* AppDelegate.swift */; };
 		FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */; };
@@ -24,6 +36,18 @@
 /* Begin PBXFileReference section */
 		4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinnerSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654EEB5ECE03E03250C430D6 /* Pods-DinnerSpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerSpinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD9D08A1FADFBE80044801F /* DSNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSNameCell.swift; sourceTree = "<group>"; };
+		AAD9D08B1FADFBE80044801F /* DSNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSNameCell.xib; sourceTree = "<group>"; };
+		AAD9D08E1FADFC410044801F /* DSImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSImageCell.swift; sourceTree = "<group>"; };
+		AAD9D08F1FADFC410044801F /* DSImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSImageCell.xib; sourceTree = "<group>"; };
+		AAD9D0921FADFC5C0044801F /* DSRequirementsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRequirementsCell.swift; sourceTree = "<group>"; };
+		AAD9D0931FADFC5C0044801F /* DSRequirementsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSRequirementsCell.xib; sourceTree = "<group>"; };
+		AAD9D0961FADFC870044801F /* DSDirectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSDirectionsCell.swift; sourceTree = "<group>"; };
+		AAD9D0971FADFC870044801F /* DSDirectionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSDirectionsCell.xib; sourceTree = "<group>"; };
+		AAD9D09A1FADFCA70044801F /* DurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationCell.swift; sourceTree = "<group>"; };
+		AAD9D09B1FADFCA70044801F /* DurationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DurationCell.xib; sourceTree = "<group>"; };
+		AAD9D09E1FADFCCC0044801F /* DSDifficultyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSDifficultyCell.swift; sourceTree = "<group>"; };
+		AAD9D09F1FADFCCC0044801F /* DSDifficultyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSDifficultyCell.xib; sourceTree = "<group>"; };
 		B8320486509F31FE85DC3335 /* Pods-DinnerSpinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerSpinner.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner.release.xcconfig"; sourceTree = "<group>"; };
 		FC28183B1FADDE94002C1E26 /* DinnerSpinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinnerSpinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC28183E1FADDE94002C1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +81,25 @@
 				4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAD9D0891FADFA380044801F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAD9D08A1FADFBE80044801F /* DSNameCell.swift */,
+				AAD9D08B1FADFBE80044801F /* DSNameCell.xib */,
+				AAD9D08E1FADFC410044801F /* DSImageCell.swift */,
+				AAD9D08F1FADFC410044801F /* DSImageCell.xib */,
+				AAD9D0921FADFC5C0044801F /* DSRequirementsCell.swift */,
+				AAD9D0931FADFC5C0044801F /* DSRequirementsCell.xib */,
+				AAD9D0961FADFC870044801F /* DSDirectionsCell.swift */,
+				AAD9D0971FADFC870044801F /* DSDirectionsCell.xib */,
+				AAD9D09A1FADFCA70044801F /* DurationCell.swift */,
+				AAD9D09B1FADFCA70044801F /* DurationCell.xib */,
+				AAD9D09E1FADFCCC0044801F /* DSDifficultyCell.swift */,
+				AAD9D09F1FADFCCC0044801F /* DSDifficultyCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F0811488478D5DB843A09604 /* Pods */ = {
@@ -161,6 +204,7 @@
 		FCE4C1E71FADEDB100D8CE0A /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				AAD9D0891FADFA380044801F /* Cells */,
 				FCE4C1EA1FADEE5A00D8CE0A /* Recipes.storyboard */,
 				FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */,
 				FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */,
@@ -249,10 +293,16 @@
 				FCE4C1EF1FADEE8F00D8CE0A /* ShoppingList.storyboard in Resources */,
 				FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */,
 				FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */,
+				AAD9D0911FADFC410044801F /* DSImageCell.xib in Resources */,
+				AAD9D0951FADFC5C0044801F /* DSRequirementsCell.xib in Resources */,
 				FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */,
 				FCE4C1ED1FADEE7E00D8CE0A /* Plan.storyboard in Resources */,
 				FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */,
 				FCE4C1EB1FADEE5A00D8CE0A /* Recipes.storyboard in Resources */,
+				AAD9D08D1FADFBE80044801F /* DSNameCell.xib in Resources */,
+				AAD9D0A11FADFCCC0044801F /* DSDifficultyCell.xib in Resources */,
+				AAD9D0991FADFC870044801F /* DSDirectionsCell.xib in Resources */,
+				AAD9D09D1FADFCA70044801F /* DurationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,10 +373,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD9D0901FADFC410044801F /* DSImageCell.swift in Sources */,
 				FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */,
+				AAD9D0941FADFC5C0044801F /* DSRequirementsCell.swift in Sources */,
+				AAD9D08C1FADFBE80044801F /* DSNameCell.swift in Sources */,
+				AAD9D0981FADFC870044801F /* DSDirectionsCell.swift in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
+				AAD9D09C1FADFCA70044801F /* DurationCell.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
 				FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */,
+				AAD9D0A01FADFCCC0044801F /* DSDifficultyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
