@@ -16,6 +16,7 @@ class DSRecipesListViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 
+		self.registerNibs()
         // Do any additional setup after loading the view.
     }
 
@@ -26,5 +27,31 @@ class DSRecipesListViewController: UIViewController {
     
 	@IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
 		self.performSegue(withIdentifier: "addRecipeSegue", sender: nil)
+	}
+	
+	func registerNibs() {
+		let nib = UINib(nibName: "DSRecipeTableViewCell", bundle: nil)
+		self.tableView.register(nib, forCellReuseIdentifier: "RecipeTableViewCell")
+	}
+}
+
+extension DSRecipesListViewController: UITableViewDataSource, UITableViewDelegate {
+	
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return 1
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 4
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeTableViewCell") as! DSRecipeTableViewCell
+		
+		return cell
+	}
+	
+	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		return 130
 	}
 }
