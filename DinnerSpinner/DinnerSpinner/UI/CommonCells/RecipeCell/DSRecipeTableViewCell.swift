@@ -1,14 +1,14 @@
 //
-//  DurationCell.swift
+//  DSRecipeTableViewCell.swift
 //  DinnerSpinner
 //
-//  Created by Dide van Berkel on 04/11/2017.
+//  Created by George Coleman on 04/11/2017.
 //  Copyright © 2017 Digithio. All rights reserved.
 //
 
 import UIKit
 
-class DurationCell: UITableViewCell {
+class DSRecipeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

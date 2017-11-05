@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="DSBulletCell" customModule="DinnerSpinner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 gram pasta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xP-8n-f5b">
+                        <rect key="frame" x="42" y="-10.5" width="224" height="80.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Oek-8O-Miz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-mo-ZrF">
+                        <rect key="frame" x="274" y="-10" width="30" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="HhP-x0-Oky"/>
+                            <constraint firstAttribute="height" constant="80" id="jAy-iG-vS0"/>
+                        </constraints>
+                        <state key="normal" image="trashcan"/>
+                        <connections>
+                            <action selector="deleteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AA0-cc-x06"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="epI-hB-9km">
+                        <rect key="frame" x="16" y="24.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="WSO-Eu-RJA"/>
+                            <constraint firstAttribute="height" constant="10" id="jZl-Zb-Su8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Or-mo-ZrF" firstAttribute="centerY" secondItem="5xP-8n-f5b" secondAttribute="centerY" id="2ah-pB-XFG"/>
+                    <constraint firstItem="5xP-8n-f5b" firstAttribute="leading" secondItem="epI-hB-9km" secondAttribute="trailing" constant="16" id="NtR-ft-fLL"/>
+                    <constraint firstAttribute="trailing" secondItem="6Or-mo-ZrF" secondAttribute="trailing" constant="16" id="UPj-zD-qEt"/>
+                    <constraint firstItem="6Or-mo-ZrF" firstAttribute="leading" secondItem="5xP-8n-f5b" secondAttribute="trailing" constant="8" id="WrN-DU-ApX"/>
+                    <constraint firstItem="epI-hB-9km" firstAttribute="centerY" secondItem="5xP-8n-f5b" secondAttribute="centerY" id="qZz-N0-Kxp"/>
+                    <constraint firstItem="5xP-8n-f5b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yQK-nL-LoV"/>
+                    <constraint firstItem="epI-hB-9km" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="znM-BI-aSE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bulletView" destination="epI-hB-9km" id="R1S-cZ-bFm"/>
+                <outlet property="deleteButton" destination="6Or-mo-ZrF" id="RKe-dQ-7ij"/>
+                <outlet property="titleLabel" destination="5xP-8n-f5b" id="Oq2-Q3-uol"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="61.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bullet" width="10" height="10"/>
+        <image name="trashcan" width="600" height="600"/>
+    </resources>
+</document>

@@ -10,6 +10,8 @@ import UIKit
 
 class DSNameCell: UITableViewCell {
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +21,10 @@ class DSNameCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupCell() {
+        
     }
     
 }

@@ -10,6 +10,9 @@ import UIKit
 
 class DSImageCell: UITableViewCell {
 
+    @IBOutlet weak var addImageButton: UIButton!
+    @IBOutlet weak var recipeImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +22,10 @@ class DSImageCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupCell() {
+        
     }
     
 }

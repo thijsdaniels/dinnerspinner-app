@@ -1,5 +1,5 @@
 //
-//  DSDifficultyCell.swift
+//  DSDurationCell.swift
 //  DinnerSpinner
 //
 //  Created by Dide van Berkel on 04/11/2017.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class DSDifficultyCell: UITableViewCell {
+class DSDurationCell: UITableViewCell {
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var textField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +24,11 @@ class DSDifficultyCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setupCell() {
+        
+    }
+    
+    @IBAction func segmentedControlSwitched(_ sender: Any) {
+        
+    }
 }

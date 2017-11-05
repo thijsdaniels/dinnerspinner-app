@@ -8,11 +8,17 @@
 
 import UIKit
 
-class DSRequirementsCell: UITableViewCell {
+class DSBulletCell: UITableViewCell {
 
+    
+    @IBOutlet weak var bulletView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var deleteButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        deleteButton.imageView?.contentMode = .scaleAspectFit
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -21,4 +27,11 @@ class DSRequirementsCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setupCell(title: String) {
+        self.titleLabel.text = title
+    }
+    
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        
+    }
 }

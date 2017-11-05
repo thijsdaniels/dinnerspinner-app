@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" userLabel="AddButton Cell" customClass="DSAddButtonCell" customModule="DinnerSpinner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYq-PL-0t4">
+                        <rect key="frame" x="58" y="8" width="246" height="64"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Voeg ingredient toe">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="addStepsButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kD6-wY-Ns4"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAd-4N-sgM">
+                        <rect key="frame" x="8" y="8" width="50" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="twu-ov-1ch"/>
+                        </constraints>
+                        <state key="normal" image="add_button"/>
+                        <connections>
+                            <action selector="addIconButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tg7-ck-BeP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="AYq-PL-0t4" secondAttribute="bottom" constant="8" id="5QV-4B-l0s"/>
+                    <constraint firstItem="AYq-PL-0t4" firstAttribute="top" secondItem="bAd-4N-sgM" secondAttribute="top" id="8fs-F7-dW5"/>
+                    <constraint firstItem="AYq-PL-0t4" firstAttribute="leading" secondItem="bAd-4N-sgM" secondAttribute="trailing" id="Coc-ld-igk"/>
+                    <constraint firstItem="AYq-PL-0t4" firstAttribute="bottom" secondItem="bAd-4N-sgM" secondAttribute="bottom" id="Dzs-Qc-hWX"/>
+                    <constraint firstItem="bAd-4N-sgM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Gzu-ex-Twj"/>
+                    <constraint firstItem="AYq-PL-0t4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="fpD-4b-COW"/>
+                    <constraint firstItem="AYq-PL-0t4" firstAttribute="centerY" secondItem="bAd-4N-sgM" secondAttribute="centerY" id="hhH-Z1-F9Y"/>
+                    <constraint firstItem="AYq-PL-0t4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mvo-Qo-HPG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addIconButton" destination="bAd-4N-sgM" id="ADN-gd-NAj"/>
+                <outlet property="addStepsButton" destination="AYq-PL-0t4" id="7H1-iU-0Oy"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_button" width="600" height="600"/>
+    </resources>
+</document>
