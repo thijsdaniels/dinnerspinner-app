@@ -2,21 +2,24 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - Cosmos (12.0.1)
   - ImageViewer (5.0.0)
   - IQKeyboardManagerSwift (5.0.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireImage (~> 3.1)
+  - Cosmos (~> 12.0)
   - ImageViewer (~> 5.0)
   - IQKeyboardManagerSwift (~> 5.0)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
   ImageViewer: 3def6e39c6979ce3e9d001c78eec0d8b895f2f73
   IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
 
-PODFILE CHECKSUM: e8ee984b0d4c688ec6b3bf6b31decf3d7c63fda0
+PODFILE CHECKSUM: cc12d2811536ceb3a8f3f294e6153191a0a0ec93
 
 COCOAPODS: 1.3.1

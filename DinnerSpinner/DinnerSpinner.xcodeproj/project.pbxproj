@@ -11,6 +11,10 @@
 		FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28183E1FADDE94002C1E26 /* AppDelegate.swift */; };
 		FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */; };
 		FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2818481FADDE94002C1E26 /* Assets.xcassets */; };
+		FC3EC2981FAE15D900C485C9 /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2971FAE15D900C485C9 /* DSTabBarController.swift */; };
+		FC3EC29A1FAE17A900C485C9 /* DSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2991FAE17A900C485C9 /* DSNavigationController.swift */; };
+		FC3EC2AE1FAE2C4800C485C9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */; };
+		FC3EC2B01FAE307700C485C9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2AF1FAE307700C485C9 /* UIImage.swift */; };
 		FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E11FADE6C200D8CE0A /* Info.plist */; };
 		FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */; };
 		FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */; };
@@ -19,6 +23,11 @@
 		FCE4C1EF1FADEE8F00D8CE0A /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */; };
 		FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */; };
 		FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */; };
+		FCE4C1FA1FADF82500D8CE0A /* DSRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C1F81FADF82500D8CE0A /* DSRecipeTableViewCell.swift */; };
+		FCE4C1FB1FADF82500D8CE0A /* DSRecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1F91FADF82500D8CE0A /* DSRecipeTableViewCell.xib */; };
+		FCE4C1FF1FADF97900D8CE0A /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1FE1FADF97900D8CE0A /* burger.jpg */; };
+		FCE4C2021FADFC5300D8CE0A /* DSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */; };
+		FCE4C2041FADFCA300D8CE0A /* DSRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */; };
 		FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +39,10 @@
 		FC28183E1FADDE94002C1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2818461FADDE94002C1E26 /* DinnerSpinner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DinnerSpinner.xcdatamodel; sourceTree = "<group>"; };
 		FC2818481FADDE94002C1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC3EC2971FAE15D900C485C9 /* DSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTabBarController.swift; sourceTree = "<group>"; };
+		FC3EC2991FAE17A900C485C9 /* DSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSNavigationController.swift; sourceTree = "<group>"; };
+		FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FC3EC2AF1FAE307700C485C9 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		FCE4C1E11FADE6C200D8CE0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +51,11 @@
 		FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingList.storyboard; sourceTree = "<group>"; };
 		FCE4C1F21FADF3FD00D8CE0A /* DSEditRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSEditRecipeViewController.swift; sourceTree = "<group>"; };
 		FCE4C1F41FADF42300D8CE0A /* DSRecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRecipesListViewController.swift; sourceTree = "<group>"; };
+		FCE4C1F81FADF82500D8CE0A /* DSRecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRecipeTableViewCell.swift; sourceTree = "<group>"; };
+		FCE4C1F91FADF82500D8CE0A /* DSRecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSRecipeTableViewCell.xib; sourceTree = "<group>"; };
+		FCE4C1FE1FADF97900D8CE0A /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = burger.jpg; path = ../../../../../Desktop/burger.jpg; sourceTree = "<group>"; };
+		FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRatingView.swift; sourceTree = "<group>"; };
+		FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSRatingView.xib; sourceTree = "<group>"; };
 		FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSApplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +123,7 @@
 		FCE4C1DA1FADE30200D8CE0A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4C1FE1FADF97900D8CE0A /* burger.jpg */,
 				FCE4C1E11FADE6C200D8CE0A /* Info.plist */,
 				FC2818481FADDE94002C1E26 /* Assets.xcassets */,
 			);
@@ -114,6 +133,8 @@
 		FCE4C1DB1FADE33100D8CE0A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4C2001FADFC1B00D8CE0A /* CommonViews */,
+				FCE4C1F61FADF7F300D8CE0A /* CommonCells */,
 				FCE4C1E91FADEDB500D8CE0A /* ShoppingList */,
 				FCE4C1E81FADEDB300D8CE0A /* Plan */,
 				FCE4C1E71FADEDB100D8CE0A /* Recipes */,
@@ -139,6 +160,8 @@
 		FCE4C1DE1FADE36400D8CE0A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */,
+				FC3EC2AF1FAE307700C485C9 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,6 +169,8 @@
 		FCE4C1DF1FADE37B00D8CE0A /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				FC3EC2971FAE15D900C485C9 /* DSTabBarController.swift */,
+				FC3EC2991FAE17A900C485C9 /* DSNavigationController.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -185,6 +210,32 @@
 				FCE4C1EE1FADEE8F00D8CE0A /* ShoppingList.storyboard */,
 			);
 			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		FCE4C1F61FADF7F300D8CE0A /* CommonCells */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4C1F71FADF80B00D8CE0A /* RecipeCell */,
+			);
+			path = CommonCells;
+			sourceTree = "<group>";
+		};
+		FCE4C1F71FADF80B00D8CE0A /* RecipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4C1F81FADF82500D8CE0A /* DSRecipeTableViewCell.swift */,
+				FCE4C1F91FADF82500D8CE0A /* DSRecipeTableViewCell.xib */,
+			);
+			path = RecipeCell;
+			sourceTree = "<group>";
+		};
+		FCE4C2001FADFC1B00D8CE0A /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */,
+				FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */,
+			);
+			path = CommonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +304,9 @@
 				FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */,
 				FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */,
 				FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */,
+				FCE4C2041FADFCA300D8CE0A /* DSRatingView.xib in Resources */,
+				FCE4C1FB1FADF82500D8CE0A /* DSRecipeTableViewCell.xib in Resources */,
+				FCE4C1FF1FADF97900D8CE0A /* burger.jpg in Resources */,
 				FCE4C1ED1FADEE7E00D8CE0A /* Plan.storyboard in Resources */,
 				FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */,
 				FCE4C1EB1FADEE5A00D8CE0A /* Recipes.storyboard in Resources */,
@@ -286,6 +340,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageViewer/ImageViewer.framework",
 			);
@@ -293,6 +348,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageViewer.framework",
 			);
@@ -326,11 +382,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE4C2021FADFC5300D8CE0A /* DSRatingView.swift in Sources */,
+				FC3EC2B01FAE307700C485C9 /* UIImage.swift in Sources */,
 				FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */,
+				FC3EC2981FAE15D900C485C9 /* DSTabBarController.swift in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
 				FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */,
 				FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */,
+				FCE4C1FA1FADF82500D8CE0A /* DSRecipeTableViewCell.swift in Sources */,
+				FC3EC29A1FAE17A900C485C9 /* DSNavigationController.swift in Sources */,
+				FC3EC2AE1FAE2C4800C485C9 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

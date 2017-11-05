@@ -36,6 +36,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bbC-he-dPD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="X6w-ET-bdj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MK-XB-zs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
