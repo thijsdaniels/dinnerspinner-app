@@ -12,51 +12,120 @@
         <!--Tab Bar Controller-->
         <scene sceneID="p9o-kM-3gd">
             <objects>
-                <tabBarController id="JVQ-OE-8Hw" sceneMemberID="viewController">
+                <tabBarController id="JVQ-OE-8Hw" customClass="DSTabBarController" customModule="DinnerSpinner" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0SK-YG-jKz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xEx-Jt-s0O" kind="relationship" relationship="viewControllers" id="7tf-XO-uh5"/>
-                        <segue destination="uTd-LV-cHz" kind="relationship" relationship="viewControllers" id="Xm7-HV-qKK"/>
-                        <segue destination="yz0-2L-Sag" kind="relationship" relationship="viewControllers" id="nB7-kM-4xZ"/>
+                        <segue destination="I6C-YW-mhr" kind="relationship" relationship="viewControllers" id="shx-0T-gwb"/>
+                        <segue destination="gNV-GB-Xyz" kind="relationship" relationship="viewControllers" id="3hR-ds-izj"/>
+                        <segue destination="RFI-x0-UYb" kind="relationship" relationship="viewControllers" id="hAn-AR-ZM9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD3-hX-51W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="-306"/>
+            <point key="canvasLocation" x="-1090" y="-427"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="HVR-g0-eKc">
             <objects>
                 <viewControllerPlaceholder storyboardName="Recipes" id="xEx-Jt-s0O" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="tOB-wP-UFp"/>
+                    <navigationItem key="navigationItem" id="AzX-7a-uDO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ea-CP-5IK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="-594"/>
+            <point key="canvasLocation" x="-1773" y="771"/>
         </scene>
         <!--Plan-->
         <scene sceneID="GYS-Hn-Vn9">
             <objects>
                 <viewControllerPlaceholder storyboardName="Plan" id="uTd-LV-cHz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="yyC-Im-ZcW"/>
+                    <navigationItem key="navigationItem" id="YYp-Dc-mlU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piM-DG-dmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="-550"/>
+            <point key="canvasLocation" x="-1090" y="771"/>
         </scene>
         <!--ShoppingList-->
         <scene sceneID="L8g-PI-hGu">
             <objects>
                 <viewControllerPlaceholder storyboardName="ShoppingList" id="yz0-2L-Sag" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="iB2-8f-X1S"/>
+                    <navigationItem key="navigationItem" id="Yr3-bP-WhD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwD-D5-J3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="-504"/>
+            <point key="canvasLocation" x="-339" y="771"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fQ5-Ck-XO7">
+            <objects>
+                <navigationController id="I6C-YW-mhr" customClass="DSNavigationController" customModule="DinnerSpinner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sFS-2U-JP5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dtv-yG-2lr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentType">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="xEx-Jt-s0O" kind="relationship" relationship="rootViewController" id="dhU-V7-v9a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfU-7N-dYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1772" y="375"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="nB3-dR-uv7">
+            <objects>
+                <navigationController id="gNV-GB-Xyz" customClass="DSNavigationController" customModule="DinnerSpinner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="4ma-JW-pkz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V8U-YL-0Uf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="uTd-LV-cHz" kind="relationship" relationship="rootViewController" id="8Y2-e8-pAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxJ-VN-d0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1090" y="375"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="yvM-ni-RIF">
+            <objects>
+                <navigationController id="RFI-x0-UYb" customClass="DSNavigationController" customModule="DinnerSpinner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Lcp-IY-9xo"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CFh-C6-nfd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="contentType">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="yz0-2L-Sag" kind="relationship" relationship="rootViewController" id="waE-cM-bPX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxc-kG-sYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338" y="375"/>
         </scene>
     </scenes>
 </document>

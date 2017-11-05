@@ -22,6 +22,11 @@
 		FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28183E1FADDE94002C1E26 /* AppDelegate.swift */; };
 		FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */; };
 		FC2818491FADDE94002C1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2818481FADDE94002C1E26 /* Assets.xcassets */; };
+		FC3EC2981FAE15D900C485C9 /* DSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2971FAE15D900C485C9 /* DSTabBarController.swift */; };
+		FC3EC29A1FAE17A900C485C9 /* DSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2991FAE17A900C485C9 /* DSNavigationController.swift */; };
+		FC3EC2AE1FAE2C4800C485C9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */; };
+		FC3EC2B01FAE307700C485C9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC2AF1FAE307700C485C9 /* UIImage.swift */; };
+		FCE4C1E21FADE6C200D8CE0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E11FADE6C200D8CE0A /* Info.plist */; };
 		FCE4C1E41FADE6F000D8CE0A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */; };
 		FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */; };
 		FCE4C1EB1FADEE5A00D8CE0A /* Recipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1EA1FADEE5A00D8CE0A /* Recipes.storyboard */; };
@@ -34,6 +39,7 @@
 		FCE4C1FF1FADF97900D8CE0A /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C1FE1FADF97900D8CE0A /* burger.jpg */; };
 		FCE4C2021FADFC5300D8CE0A /* DSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */; };
 		FCE4C2041FADFCA300D8CE0A /* DSRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */; };
+		FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,10 @@
 		FC28183E1FADDE94002C1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2818461FADDE94002C1E26 /* DinnerSpinner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DinnerSpinner.xcdatamodel; sourceTree = "<group>"; };
 		FC2818481FADDE94002C1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC3EC2971FAE15D900C485C9 /* DSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTabBarController.swift; sourceTree = "<group>"; };
+		FC3EC2991FAE17A900C485C9 /* DSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSNavigationController.swift; sourceTree = "<group>"; };
+		FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FC3EC2AF1FAE307700C485C9 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		FCE4C1E11FADE6C200D8CE0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		FCE4C1E51FADE88E00D8CE0A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +78,7 @@
 		FCE4C1FE1FADF97900D8CE0A /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = burger.jpg; path = ../../../../../Desktop/burger.jpg; sourceTree = "<group>"; };
 		FCE4C2011FADFC5300D8CE0A /* DSRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRatingView.swift; sourceTree = "<group>"; };
 		FCE4C2031FADFCA300D8CE0A /* DSRatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSRatingView.xib; sourceTree = "<group>"; };
+		FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSApplicationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +200,8 @@
 		FCE4C1DE1FADE36400D8CE0A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */,
+				FC3EC2AF1FAE307700C485C9 /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +209,8 @@
 		FCE4C1DF1FADE37B00D8CE0A /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				FC3EC2971FAE15D900C485C9 /* DSTabBarController.swift */,
+				FC3EC2991FAE17A900C485C9 /* DSNavigationController.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -206,6 +221,7 @@
 				FC2818451FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld */,
 				FC28183E1FADDE94002C1E26 /* AppDelegate.swift */,
 				FCE4C1E31FADE6F000D8CE0A /* SplashScreen.storyboard */,
+				FCE4C2051FAE10A300D8CE0A /* DSApplicationController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -413,16 +429,21 @@
 			files = (
 				AAD9D0901FADFC410044801F /* DSImageCell.swift in Sources */,
 				FCE4C2021FADFC5300D8CE0A /* DSRatingView.swift in Sources */,
+				FC3EC2B01FAE307700C485C9 /* UIImage.swift in Sources */,
 				FC2818471FADDE94002C1E26 /* DinnerSpinner.xcdatamodeld in Sources */,
 				AAD9D0941FADFC5C0044801F /* DSBulletCell.swift in Sources */,
 				AAD9D08C1FADFBE80044801F /* DSNameCell.swift in Sources */,
 				AAD9D0981FADFC870044801F /* DSAddButtonCell.swift in Sources */,
+				FC3EC2981FAE15D900C485C9 /* DSTabBarController.swift in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
 				AAD9D09C1FADFCA70044801F /* DSDurationCell.swift in Sources */,
 				AAD9D0A61FAE08C70044801F /* Colors.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
+				FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */,
 				FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */,
 				FCE4C1FA1FADF82500D8CE0A /* DSRecipeTableViewCell.swift in Sources */,
+				FC3EC29A1FAE17A900C485C9 /* DSNavigationController.swift in Sources */,
+				FC3EC2AE1FAE2C4800C485C9 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
