@@ -15,7 +15,9 @@ protocol DSBulletCellDelegate {
 class DSBulletCell: UITableViewCell {
     
     @IBOutlet weak var bulletView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var quantityField: UITextField!
+    @IBOutlet weak var unitButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     
     var delegate: DSBulletCellDelegate?
@@ -33,10 +35,15 @@ class DSBulletCell: UITableViewCell {
     }
     
     func setupCell(title: String) {
-        self.titleLabel.text = title
+        self.titleField.text = title
     }
     
     @IBAction func deleteButtonPressed(_ sender: Any) {
         self.delegate?.deleteButtonPressed(sender)
     }
+    
+    @IBAction func unitButtonPressed(_ sender: Any) {
+        
+    }
+    
 }

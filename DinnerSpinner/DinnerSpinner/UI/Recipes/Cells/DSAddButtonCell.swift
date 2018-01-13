@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol DSAddButtonCellDelegate {
+    func addStepsButtonPressed(_ sender: Any)
+}
+
 class DSAddButtonCell: UITableViewCell {
 
     @IBOutlet weak var addIconButton: UIButton!
     @IBOutlet weak var addStepsButton: UIButton!
     var typeOfButton : EditRecipeCellType?
+    
+    var delegate: DSAddButtonCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,10 +44,10 @@ class DSAddButtonCell: UITableViewCell {
     }
     
     @IBAction func addStepsButtonPressed(_ sender: Any) {
-        
+        self.delegate?.addStepsButtonPressed(sender)
     }
     
     @IBAction func addIconButtonPressed(_ sender: Any) {
-        
+        self.delegate?.addStepsButtonPressed(sender)
     }
 }

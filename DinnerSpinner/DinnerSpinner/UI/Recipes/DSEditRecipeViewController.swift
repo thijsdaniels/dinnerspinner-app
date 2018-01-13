@@ -16,7 +16,7 @@ enum EditRecipeCellType {
     case Duration
 }
 
-class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate {
+class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate, DSAddButtonCellDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     var editRecipeArr = [[String: Any]]()
@@ -89,6 +89,7 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "DSAddButtonCell", for: indexPath) as? DSAddButtonCell {
                     cell.typeOfButton = EditRecipeCellType.Requirements
                     cell.setupCell()
+                    cell.delegate = self
                     return cell
                 }
             }
@@ -126,5 +127,10 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         print("delete button pressed")
     }
     
+    // MARK - DSAddButtonCellDelegate
     
+    func addStepsButtonPressed(_ sender: Any) {
+        // Add row
+        print("add steps button pressed")
+    }
 }
