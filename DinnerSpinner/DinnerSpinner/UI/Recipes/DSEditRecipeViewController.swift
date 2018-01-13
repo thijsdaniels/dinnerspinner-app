@@ -45,7 +45,7 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         editRecipeArr = [["type" : "image", "height" : 175.0], ["type" : "name", "height" : 70.0], ["type" : "requirements", "height" : 60.0], ["type" : "steps", "height" : 60.0], ["type" : "duration", "height" : 70.0]]
         
         // For now, some dummy requirements and steps.
-        requirementsArr = ["100 gram bloem", "500 gram boter", "1 komkommer"]
+        requirementsArr = ["Boter", "Bloem", "Suiker"]
         stepsArr = ["Doe de pasta in de pan", "Kook de pasta", "Haal de pasta uit de pan"]
         
         // Setup possible choices for UIPicker
@@ -242,6 +242,10 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
             dsImageCell?.recipeImageView.image = pickedImage
         }
         
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: true, completion: nil)
     }
 
