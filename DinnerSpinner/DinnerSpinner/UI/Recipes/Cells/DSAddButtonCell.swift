@@ -30,10 +30,10 @@ class DSAddButtonCell: UITableViewCell {
         // Setup image and title
         if self.typeOfButton == EditRecipeCellType.Requirements {
             // Ingredients
-            addStepsButton.setTitle("Voeg ingredient toe", for: .normal)
+            addStepsButton.setTitle("recipes_add_ingredient".localized, for: .normal)
         } else {
             // Steps
-            addStepsButton.setTitle("Voeg stap toe", for: .normal)
+            addStepsButton.setTitle("recipes_add_step".localized, for: .normal)
         }
     }
     

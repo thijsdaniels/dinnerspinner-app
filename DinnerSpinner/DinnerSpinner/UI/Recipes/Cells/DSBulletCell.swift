@@ -8,12 +8,17 @@
 
 import UIKit
 
-class DSBulletCell: UITableViewCell {
+protocol DSBulletCellDelegate {
+    func deleteButtonPressed(_ sender: Any)
+}
 
+class DSBulletCell: UITableViewCell {
     
     @IBOutlet weak var bulletView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
+    
+    var delegate: DSBulletCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,6 +37,6 @@ class DSBulletCell: UITableViewCell {
     }
     
     @IBAction func deleteButtonPressed(_ sender: Any) {
-        
+        self.delegate?.deleteButtonPressed(sender)
     }
 }

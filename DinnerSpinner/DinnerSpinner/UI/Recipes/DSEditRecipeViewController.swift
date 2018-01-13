@@ -16,7 +16,7 @@ enum EditRecipeCellType {
     case Duration
 }
 
-class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     var editRecipeArr = [[String: Any]]()
@@ -82,6 +82,7 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
             if indexPath.row < self.requirementsArr.count {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "DSBulletCell", for: indexPath) as? DSBulletCell {
                     cell.setupCell(title: requirementsArr[indexPath.row])
+                    cell.delegate = self
                     return cell
                 }
             } else {
@@ -116,6 +117,13 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return editRecipeArr.count
+    }
+    
+    // MARK - DSBulletCellDelegate
+    
+    func deleteButtonPressed(_ sender: Any) {
+        // Delete row
+        print("delete button pressed")
     }
     
     
