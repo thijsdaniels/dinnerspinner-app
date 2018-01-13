@@ -11,6 +11,11 @@ pod 'AlamofireImage', '~> 3.1'
 pod 'IQKeyboardManagerSwift', '~> 5.0'
 pod 'ImageViewer', '~> 5.0'
 pod 'Cosmos', '~> 12.0'
+pod 'SwiftyJSON', '~> 4.0'
+pod 'RxSwift', '~> 4.0.0'
+pod 'RxCocoa', '~> 4.0.0'
+pod 'RxAlamofire', '~> 4.0.0'
+pod 'CoreStore', :git => 'https://github.com/JohnEstropia/CoreStore.git', :branch => 'prototype/Swift_4_0'
 
 end
 
