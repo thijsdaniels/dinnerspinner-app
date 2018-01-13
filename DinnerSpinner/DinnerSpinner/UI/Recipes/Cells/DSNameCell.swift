@@ -15,6 +15,7 @@ class DSNameCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        textField.placeholder = "recipes_name".localized
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

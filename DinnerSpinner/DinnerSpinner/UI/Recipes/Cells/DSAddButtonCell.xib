@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,7 +29,7 @@
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
-                            <action selector="addStepsButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kD6-wY-Ns4"/>
+                            <action selector="addButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tEN-gB-Shy"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAd-4N-sgM">
@@ -39,7 +39,7 @@
                         </constraints>
                         <state key="normal" image="add_button"/>
                         <connections>
-                            <action selector="addIconButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tg7-ck-BeP"/>
+                            <action selector="addIconButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fgW-SW-6sj"/>
                         </connections>
                     </button>
                 </subviews>
@@ -56,8 +56,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="addIconButton" destination="bAd-4N-sgM" id="ADN-gd-NAj"/>
-                <outlet property="addStepsButton" destination="AYq-PL-0t4" id="7H1-iU-0Oy"/>
+                <outlet property="addIconButton" destination="bAd-4N-sgM" id="aiZ-NV-hhF"/>
+                <outlet property="addStepsButton" destination="AYq-PL-0t4" id="wXC-Xa-Ek0"/>
             </connections>
             <point key="canvasLocation" x="34" y="126"/>
         </tableViewCell>

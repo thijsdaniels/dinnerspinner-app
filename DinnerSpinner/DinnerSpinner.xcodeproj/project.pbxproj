@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAD5996F200A1BA8002129A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD5996E200A1BA8002129A8 /* Localizable.strings */; };
+		AAD59971200A1BFF002129A8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD59970200A1BFF002129A8 /* String.swift */; };
+		AAD59973200A37F4002129A8 /* UIPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD59972200A37F4002129A8 /* UIPicker.swift */; };
 		AAD9D08C1FADFBE80044801F /* DSNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D08A1FADFBE80044801F /* DSNameCell.swift */; };
 		AAD9D08D1FADFBE80044801F /* DSNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D08B1FADFBE80044801F /* DSNameCell.xib */; };
 		AAD9D0901FADFC410044801F /* DSImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D08E1FADFC410044801F /* DSImageCell.swift */; };
@@ -54,6 +57,9 @@
 /* Begin PBXFileReference section */
 		4A5EE1212F0754D58AD19C56 /* Pods_DinnerSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinnerSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654EEB5ECE03E03250C430D6 /* Pods-DinnerSpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerSpinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD5996E200A1BA8002129A8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AAD59970200A1BFF002129A8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AAD59972200A37F4002129A8 /* UIPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPicker.swift; sourceTree = "<group>"; };
 		AAD9D08A1FADFBE80044801F /* DSNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSNameCell.swift; sourceTree = "<group>"; };
 		AAD9D08B1FADFBE80044801F /* DSNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSNameCell.xib; sourceTree = "<group>"; };
 		AAD9D08E1FADFC410044801F /* DSImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSImageCell.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 				FC872844200A1A630012DA42 /* burger.jpg */,
 				FCE4C1E11FADE6C200D8CE0A /* Info.plist */,
 				FC2818481FADDE94002C1E26 /* Assets.xcassets */,
+				AAD5996E200A1BA8002129A8 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD9D0A51FAE08C70044801F /* Colors.swift */,
+				AAD59972200A37F4002129A8 /* UIPicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			children = (
 				FC3EC2AD1FAE2C4800C485C9 /* UIColor.swift */,
 				FC3EC2AF1FAE307700C485C9 /* UIImage.swift */,
+				AAD59970200A1BFF002129A8 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -388,6 +397,7 @@
 				FCE4C1FB1FADF82500D8CE0A /* DSRecipeTableViewCell.xib in Resources */,
 				FCE4C1ED1FADEE7E00D8CE0A /* Plan.storyboard in Resources */,
 				FCE4C1E61FADE88E00D8CE0A /* Main.storyboard in Resources */,
+				AAD5996F200A1BA8002129A8 /* Localizable.strings in Resources */,
 				FCE4C1EB1FADEE5A00D8CE0A /* Recipes.storyboard in Resources */,
 				AAD9D08D1FADFBE80044801F /* DSNameCell.xib in Resources */,
 				AAD9D0991FADFC870044801F /* DSAddButtonCell.xib in Resources */,
@@ -492,9 +502,11 @@
 				FCC399A8200A4DCD00645481 /* DSImage.swift in Sources */,
 				FC872849200A3BD00012DA42 /* DSRecipeManager.swift in Sources */,
 				AAD9D09C1FADFCA70044801F /* DSDurationCell.swift in Sources */,
+				AAD59973200A37F4002129A8 /* UIPicker.swift in Sources */,
 				AAD9D0A61FAE08C70044801F /* Colors.swift in Sources */,
 				FC872847200A21230012DA42 /* DSAPIManager.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
+				AAD59971200A1BFF002129A8 /* String.swift in Sources */,
 				FCE4C2061FAE10A300D8CE0A /* DSApplicationController.swift in Sources */,
 				FCE4C1F51FADF42300D8CE0A /* DSRecipesListViewController.swift in Sources */,
 				FCE4C1FA1FADF82500D8CE0A /* DSRecipeTableViewCell.swift in Sources */,

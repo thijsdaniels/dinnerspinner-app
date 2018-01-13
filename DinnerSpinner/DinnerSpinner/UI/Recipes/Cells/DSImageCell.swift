@@ -8,10 +8,16 @@
 
 import UIKit
 
+protocol DSImageCellDelegate {
+    func addImageButtonPressed(for imageCell: DSImageCell)
+}
+
 class DSImageCell: UITableViewCell {
 
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var recipeImageView: UIImageView!
+    
+    var delegate: DSImageCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +32,10 @@ class DSImageCell: UITableViewCell {
     
     func setupCell() {
         
+    }
+    
+    @IBAction func addImageButtonPressed(_ sender: Any) {
+        self.delegate?.addImageButtonPressed(for: self)
     }
     
 }

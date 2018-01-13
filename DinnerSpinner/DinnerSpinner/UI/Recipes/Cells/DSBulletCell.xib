@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,15 +20,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 gram pasta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xP-8n-f5b">
-                        <rect key="frame" x="42" y="-10.5" width="224" height="80.5"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="80" id="Oek-8O-Miz"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-mo-ZrF">
                         <rect key="frame" x="274" y="-10" width="30" height="80"/>
                         <constraints>
@@ -37,7 +28,7 @@
                         </constraints>
                         <state key="normal" image="trashcan"/>
                         <connections>
-                            <action selector="deleteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AA0-cc-x06"/>
+                            <action selector="deleteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2m7-q4-IGa"/>
                         </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet" translatesAutoresizingMaskIntoConstraints="NO" id="epI-hB-9km">
@@ -47,24 +38,61 @@
                             <constraint firstAttribute="height" constant="10" id="jZl-Zb-Su8"/>
                         </constraints>
                     </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rkr-73-Dyo">
+                        <rect key="frame" x="34" y="14" width="106" height="32"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eu-zv-48r">
+                        <rect key="frame" x="148" y="14" width="50" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="jC8-eE-J3g"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1X-ft-Yts">
+                        <rect key="frame" x="206" y="11" width="60" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="fQ7-AM-39g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Unit">
+                            <color key="titleColor" red="0.82745098039215681" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="unitButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ql5-QW-TZd"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6Or-mo-ZrF" firstAttribute="centerY" secondItem="5xP-8n-f5b" secondAttribute="centerY" id="2ah-pB-XFG"/>
-                    <constraint firstItem="5xP-8n-f5b" firstAttribute="leading" secondItem="epI-hB-9km" secondAttribute="trailing" constant="16" id="NtR-ft-fLL"/>
+                    <constraint firstItem="Rkr-73-Dyo" firstAttribute="leading" secondItem="epI-hB-9km" secondAttribute="trailing" constant="8" id="1w9-Hf-tS3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="o1X-ft-Yts" secondAttribute="bottom" id="6dr-Vu-Xhp"/>
+                    <constraint firstItem="6Or-mo-ZrF" firstAttribute="leading" secondItem="o1X-ft-Yts" secondAttribute="trailing" constant="8" id="7Fc-Sg-HPr"/>
+                    <constraint firstItem="6Or-mo-ZrF" firstAttribute="centerY" secondItem="Rkr-73-Dyo" secondAttribute="centerY" id="7VB-5y-EyP"/>
+                    <constraint firstItem="4eu-zv-48r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Ij6-X6-Ve0"/>
+                    <constraint firstItem="Rkr-73-Dyo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="UD1-hh-2Y0"/>
                     <constraint firstAttribute="trailing" secondItem="6Or-mo-ZrF" secondAttribute="trailing" constant="16" id="UPj-zD-qEt"/>
-                    <constraint firstItem="6Or-mo-ZrF" firstAttribute="leading" secondItem="5xP-8n-f5b" secondAttribute="trailing" constant="8" id="WrN-DU-ApX"/>
-                    <constraint firstItem="epI-hB-9km" firstAttribute="centerY" secondItem="5xP-8n-f5b" secondAttribute="centerY" id="qZz-N0-Kxp"/>
-                    <constraint firstItem="5xP-8n-f5b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yQK-nL-LoV"/>
+                    <constraint firstItem="4eu-zv-48r" firstAttribute="leading" secondItem="Rkr-73-Dyo" secondAttribute="trailing" constant="8" id="W2w-ju-a8z"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4eu-zv-48r" secondAttribute="bottom" constant="3" id="dSA-cn-bNo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Rkr-73-Dyo" secondAttribute="bottom" constant="3" id="f7t-pq-KBx"/>
+                    <constraint firstItem="o1X-ft-Yts" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="qtq-Hb-lON"/>
+                    <constraint firstItem="o1X-ft-Yts" firstAttribute="leading" secondItem="4eu-zv-48r" secondAttribute="trailing" constant="8" id="sdY-T6-3Ub"/>
+                    <constraint firstItem="Rkr-73-Dyo" firstAttribute="centerY" secondItem="epI-hB-9km" secondAttribute="centerY" id="wE1-ek-0Kx"/>
                     <constraint firstItem="epI-hB-9km" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="znM-BI-aSE"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bulletView" destination="epI-hB-9km" id="R1S-cZ-bFm"/>
-                <outlet property="deleteButton" destination="6Or-mo-ZrF" id="RKe-dQ-7ij"/>
-                <outlet property="titleLabel" destination="5xP-8n-f5b" id="Oq2-Q3-uol"/>
+                <outlet property="deleteButton" destination="6Or-mo-ZrF" id="fsS-in-zDg"/>
+                <outlet property="quantityField" destination="4eu-zv-48r" id="rbZ-BO-rB0"/>
+                <outlet property="titleField" destination="Rkr-73-Dyo" id="C49-wU-RpP"/>
+                <outlet property="unitButton" destination="o1X-ft-Yts" id="uRT-nW-f8W"/>
             </connections>
-            <point key="canvasLocation" x="34" y="61.5"/>
+            <point key="canvasLocation" x="34" y="61"/>
         </tableViewCell>
     </objects>
     <resources>

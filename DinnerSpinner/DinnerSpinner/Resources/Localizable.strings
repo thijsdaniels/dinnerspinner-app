@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  DinnerSpinner
+
+  Created by Dide van Berkel on 13/01/2018.
+  Copyright © 2018 Digithio. All rights reserved.
+*/
+
+// GENERAL
+"button_cancel" = "Cancel";
+"button_ok" = "OK";
+
+// RECIPES
+
+"recipes_add_ingredient" = "Add ingredient";
+"recipes_add_step" = "Add step";
+"recipes_amount" = "Amount";
+"recipes_ingredient" = "Ingredient";
+"recipes_step" = "Step";
+"recipes_name" = "Name";
+"recipes_duration" = "Duration";
