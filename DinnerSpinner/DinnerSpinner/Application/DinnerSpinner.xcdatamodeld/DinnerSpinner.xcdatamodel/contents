@@ -1,4 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DSImage" representedClassName="DSImage" syncable="YES" codeGenerationType="class">
+        <attribute name="height" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSImage" inverseName="images" inverseEntity="DSImage" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DSRecipe" inverseName="images" inverseEntity="DSRecipe" syncable="YES"/>
+    </entity>
+    <entity name="DSIngredient" representedClassName="DSIngredient" syncable="YES" codeGenerationType="class">
+        <attribute name="ingredientID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="requirement" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSRequirement" inverseName="ingredient" inverseEntity="DSRequirement" syncable="YES"/>
+    </entity>
+    <entity name="DSRecipe" representedClassName="DSRecipe" syncable="YES" codeGenerationType="class">
+        <attribute name="cookingDuration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="difficulty" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="directions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preperationDuration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="recipeID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSImage" inverseName="recipe" inverseEntity="DSImage" syncable="YES"/>
+        <relationship name="requirements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSRequirement" inverseName="recipe" inverseEntity="DSRequirement" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DSUser" inverseName="recipes" inverseEntity="DSUser" syncable="YES"/>
+    </entity>
+    <entity name="DSRequirement" representedClassName="DSRequirement" syncable="YES" codeGenerationType="class">
+        <attribute name="boughtAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="requirementID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DSIngredient" inverseName="requirement" inverseEntity="DSIngredient" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DSRecipe" inverseName="requirements" inverseEntity="DSRecipe" syncable="YES"/>
+    </entity>
+    <entity name="DSSelection" representedClassName="DSSelection" syncable="YES" codeGenerationType="class">
+        <attribute name="canceledAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cookedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="selectionID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DSUser" inverseName="selections" inverseEntity="DSUser" syncable="YES"/>
+    </entity>
+    <entity name="DSUser" representedClassName="DSUser" syncable="YES" codeGenerationType="class">
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSRecipe" inverseName="user" inverseEntity="DSRecipe" syncable="YES"/>
+        <relationship name="selections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSSelection" inverseName="user" inverseEntity="DSSelection" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DSRecipe" positionX="-162" positionY="-90" width="128" height="193"/>
+        <element name="DSImage" positionX="-504" positionY="-117" width="128" height="148"/>
+        <element name="DSIngredient" positionX="-162" positionY="153" width="128" height="88"/>
+        <element name="DSRequirement" positionX="-495" positionY="108" width="128" height="133"/>
+        <element name="DSUser" positionX="-324" positionY="-36" width="128" height="105"/>
+        <element name="DSSelection" positionX="-317" positionY="108" width="128" height="103"/>
+    </elements>
 </model>
