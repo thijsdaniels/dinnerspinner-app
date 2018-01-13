@@ -44,14 +44,14 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2000" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eu-zv-48r">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eu-zv-48r">
                         <rect key="frame" x="148" y="14" width="50" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="jC8-eE-J3g"/>
                         </constraints>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1X-ft-Yts">
                         <rect key="frame" x="206" y="11" width="60" height="38"/>
@@ -87,7 +87,7 @@
                 <outlet property="bulletView" destination="epI-hB-9km" id="R1S-cZ-bFm"/>
                 <outlet property="deleteButton" destination="6Or-mo-ZrF" id="fsS-in-zDg"/>
                 <outlet property="quantityField" destination="4eu-zv-48r" id="rbZ-BO-rB0"/>
-                <outlet property="titleField" destination="Rkr-73-Dyo" id="3E8-XS-VVX"/>
+                <outlet property="titleField" destination="Rkr-73-Dyo" id="C49-wU-RpP"/>
                 <outlet property="unitButton" destination="o1X-ft-Yts" id="uRT-nW-f8W"/>
             </connections>
             <point key="canvasLocation" x="34" y="61"/>

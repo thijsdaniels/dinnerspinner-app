@@ -92,11 +92,16 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "DSBulletCell", for: indexPath) as? DSBulletCell {
                     cell.setupCell(title: requirementsArr[indexPath.row])
                     cell.delegate = self
+                    cell.typeOfButton = .Requirements
+                    cell.titleField.placeholder = "recipes_ingredient".localized
+                    cell.quantityField.placeholder = "recipes_amount".localized
+                    cell.quantityField.isHidden = false
+                    cell.unitButton.isHidden = false
                     return cell
                 }
             } else {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "DSAddButtonCell", for: indexPath) as? DSAddButtonCell {
-                    cell.typeOfButton = EditRecipeCellType.Requirements
+                    cell.typeOfButton = .Requirements
                     cell.setupCell()
                     cell.delegate = self
                     return cell
@@ -106,12 +111,18 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
             if indexPath.row < self.stepsArr.count {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "DSBulletCell", for: indexPath) as? DSBulletCell {
                     cell.setupCell(title: self.stepsArr[indexPath.row])
+                    cell.delegate = self
+                    cell.typeOfButton = .Steps
+                    cell.titleField.placeholder = "recipes_step".localized
+                    cell.quantityField.isHidden = true
+                    cell.unitButton.isHidden = true
                     return cell
                 }
             } else {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "DSAddButtonCell", for: indexPath) as? DSAddButtonCell {
-                    cell.typeOfButton = EditRecipeCellType.Steps
+                    cell.typeOfButton = .Steps
                     cell.setupCell()
+                    cell.delegate = self
                     return cell
                 }
             }
@@ -131,8 +142,18 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
     
     // MARK - DSBulletCellDelegate
     
-    func deleteButtonPressed(_ sender: Any) {
+    func deleteButtonPressed(for bulletCell: DSBulletCell) {
         // Delete row
+        if let indexPath = self.tableview.indexPath(for: bulletCell) {
+            if bulletCell.typeOfButton == .Steps {
+                // delete in steps
+                stepsArr.remove(at: indexPath.row)
+            } else {
+                // delete in requirements
+                requirementsArr.remove(at: indexPath.row)
+            }
+            self.tableview.deleteRows(at: [indexPath], with: .automatic)
+        }
         print("delete button pressed")
     }
     
@@ -143,9 +164,17 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
     
     // MARK - DSAddButtonCellDelegate
     
-    func addStepsButtonPressed(_ sender: Any) {
+    func addButtonPressed(for addButtonCell: DSAddButtonCell) {
         // Add row
-        print("add steps button pressed")
+        if addButtonCell.typeOfButton == .Requirements {
+            // Add new ingredient
+            self.requirementsArr.append("")
+        } else {
+            // Add new step
+            self.stepsArr.append("")
+        }
+        
+        self.tableview.reloadData()
     }
     
     // MARK: UIPickerDelegate
@@ -158,6 +187,7 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         if let selectedItem = picker?.selectedItem {
             dsBulletCell?.unitButton.setTitle(selectedItem, for: .normal)
         }
+        picker?.endPicking()
     }
     
     func pickerView(inputAccessoryViewFor pickerView: UIPicker) -> UIView? {

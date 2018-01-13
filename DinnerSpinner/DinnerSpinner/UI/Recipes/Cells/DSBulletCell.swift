@@ -9,11 +9,11 @@
 import UIKit
 
 protocol DSBulletCellDelegate {
-    func deleteButtonPressed(_ sender: Any)
+    func deleteButtonPressed(for bulletCell: DSBulletCell)
     func unitButtonPressed(for bulletCell: DSBulletCell)
 }
 
-class DSBulletCell: UITableViewCell {
+class DSBulletCell: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet weak var bulletView: UIImageView!
     @IBOutlet weak var titleField: UITextField!
@@ -22,11 +22,13 @@ class DSBulletCell: UITableViewCell {
     @IBOutlet weak var deleteButton: UIButton!
     
     var delegate: DSBulletCellDelegate?
+    var typeOfButton : EditRecipeCellType?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         deleteButton.imageView?.contentMode = .scaleAspectFit
+        quantityField.delegate = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -40,11 +42,19 @@ class DSBulletCell: UITableViewCell {
     }
     
     @IBAction func deleteButtonPressed(_ sender: Any) {
-        self.delegate?.deleteButtonPressed(sender)
+        self.delegate?.deleteButtonPressed(for: self)
     }
     
     @IBAction func unitButtonPressed(_ sender: Any) {
         self.delegate?.unitButtonPressed(for: self)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
     }
     
 }

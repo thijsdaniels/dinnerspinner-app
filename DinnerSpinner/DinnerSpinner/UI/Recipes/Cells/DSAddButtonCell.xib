@@ -29,7 +29,7 @@
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
-                            <action selector="addStepsButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VkC-nO-Rb6"/>
+                            <action selector="addButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tEN-gB-Shy"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAd-4N-sgM">

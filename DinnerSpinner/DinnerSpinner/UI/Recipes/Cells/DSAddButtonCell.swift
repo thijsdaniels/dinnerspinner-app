@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DSAddButtonCellDelegate {
-    func addStepsButtonPressed(_ sender: Any)
+    func addButtonPressed(for addButtonCell: DSAddButtonCell)
 }
 
 class DSAddButtonCell: UITableViewCell {
@@ -34,7 +34,7 @@ class DSAddButtonCell: UITableViewCell {
     
     func setupCell() {
         // Setup image and title
-        if self.typeOfButton == EditRecipeCellType.Requirements {
+        if self.typeOfButton == .Requirements {
             // Ingredients
             addStepsButton.setTitle("recipes_add_ingredient".localized, for: .normal)
         } else {
@@ -43,11 +43,11 @@ class DSAddButtonCell: UITableViewCell {
         }
     }
     
-    @IBAction func addStepsButtonPressed(_ sender: Any) {
-        self.delegate?.addStepsButtonPressed(sender)
+    @IBAction func addButtonPressed(_ sender: Any) {
+        self.delegate?.addButtonPressed(for: self)
     }
     
     @IBAction func addIconButtonPressed(_ sender: Any) {
-        self.delegate?.addStepsButtonPressed(sender)
+        self.delegate?.addButtonPressed(for: self)
     }
 }
