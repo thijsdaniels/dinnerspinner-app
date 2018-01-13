@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AAD5996F200A1BA8002129A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD5996E200A1BA8002129A8 /* Localizable.strings */; };
 		AAD59971200A1BFF002129A8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD59970200A1BFF002129A8 /* String.swift */; };
+		AAD59973200A37F4002129A8 /* UIPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD59972200A37F4002129A8 /* UIPicker.swift */; };
 		AAD9D08C1FADFBE80044801F /* DSNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D08A1FADFBE80044801F /* DSNameCell.swift */; };
 		AAD9D08D1FADFBE80044801F /* DSNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9D08B1FADFBE80044801F /* DSNameCell.xib */; };
 		AAD9D0901FADFC410044801F /* DSImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9D08E1FADFC410044801F /* DSImageCell.swift */; };
@@ -48,6 +49,7 @@
 		654EEB5ECE03E03250C430D6 /* Pods-DinnerSpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinnerSpinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinnerSpinner/Pods-DinnerSpinner.debug.xcconfig"; sourceTree = "<group>"; };
 		AAD5996E200A1BA8002129A8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		AAD59970200A1BFF002129A8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AAD59972200A37F4002129A8 /* UIPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPicker.swift; sourceTree = "<group>"; };
 		AAD9D08A1FADFBE80044801F /* DSNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSNameCell.swift; sourceTree = "<group>"; };
 		AAD9D08B1FADFBE80044801F /* DSNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSNameCell.xib; sourceTree = "<group>"; };
 		AAD9D08E1FADFC410044801F /* DSImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSImageCell.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD9D0A51FAE08C70044801F /* Colors.swift */,
+				AAD59972200A37F4002129A8 /* UIPicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				FC3EC2981FAE15D900C485C9 /* DSTabBarController.swift in Sources */,
 				FC28183F1FADDE94002C1E26 /* AppDelegate.swift in Sources */,
 				AAD9D09C1FADFCA70044801F /* DSDurationCell.swift in Sources */,
+				AAD59973200A37F4002129A8 /* UIPicker.swift in Sources */,
 				AAD9D0A61FAE08C70044801F /* Colors.swift in Sources */,
 				FCE4C1F31FADF3FD00D8CE0A /* DSEditRecipeViewController.swift in Sources */,
 				AAD59971200A1BFF002129A8 /* String.swift in Sources */,

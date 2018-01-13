@@ -16,12 +16,16 @@ enum EditRecipeCellType {
     case Duration
 }
 
-class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate, DSAddButtonCellDelegate {
+class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate, DSAddButtonCellDelegate, UIPickerDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     var editRecipeArr = [[String: Any]]()
     var requirementsArr = [String]()
     var stepsArr = [String]()
+    
+    var dsBulletCell: DSBulletCell?
+    
+    fileprivate var picker: UIPicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,11 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         // For now, some dummy requirements and steps.
         requirementsArr = ["100 gram bloem", "500 gram boter", "1 komkommer"]
         stepsArr = ["Doe de pasta in de pan", "Kook de pasta", "Haal de pasta uit de pan"]
+        
+        // Setup possible choices for UIPicker
+        picker = UIPicker(parentViewController: self)
+        picker?.delegate = self
+        picker?.set(items: ["1", "2", "3"])
     }
     
     override func didReceiveMemoryWarning() {
@@ -127,10 +136,54 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         print("delete button pressed")
     }
     
+    func unitButtonPressed(for bulletCell: DSBulletCell) {
+        self.dsBulletCell = bulletCell
+        picker?.startPicking()
+    }
+    
     // MARK - DSAddButtonCellDelegate
     
     func addStepsButtonPressed(_ sender: Any) {
         // Add row
         print("add steps button pressed")
     }
+    
+    // MARK: UIPickerDelegate
+    
+    @objc func pickerCancelAction() {
+        picker?.endPicking()
+    }
+    
+    @objc func pickerSetAction() {
+        if let selectedItem = picker?.selectedItem {
+            dsBulletCell?.unitButton.setTitle(selectedItem, for: .normal)
+        }
+    }
+    
+    func pickerView(inputAccessoryViewFor pickerView: UIPicker) -> UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 30))
+        view.backgroundColor = .white
+        let buttonWidth: CGFloat = 100
+        
+        let cancelButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - buttonWidth - 10, y: 0, width: buttonWidth, height: 30))
+        cancelButton.setTitle("button_cancel".localized, for: .normal)
+        cancelButton.setTitleColor(.black, for: .normal)
+        cancelButton.setTitleColor(.lightGray, for: .highlighted)
+        cancelButton.addTarget(self, action: #selector(pickerCancelAction), for: .touchUpInside)
+        view.addSubview(cancelButton)
+        
+        let setButton = UIButton(frame: CGRect(x: 10, y: 0, width: buttonWidth, height: 30))
+        setButton.setTitle("button_ok".localized, for: .normal)
+        setButton.setTitleColor(.black, for: .normal)
+        setButton.setTitleColor(.lightGray, for: .highlighted)
+        setButton.addTarget(self, action: #selector(pickerSetAction), for: .touchUpInside)
+        view.addSubview(setButton)
+        
+        return view
+    }
+    
+    func pickerView(didSelect value: String, inRow row: Int, delegatedFrom pickerView: UIPicker) {
+        print("\(value)")
+    }
+
 }

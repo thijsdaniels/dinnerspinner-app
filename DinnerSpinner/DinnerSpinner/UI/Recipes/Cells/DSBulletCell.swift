@@ -10,6 +10,7 @@ import UIKit
 
 protocol DSBulletCellDelegate {
     func deleteButtonPressed(_ sender: Any)
+    func unitButtonPressed(for bulletCell: DSBulletCell)
 }
 
 class DSBulletCell: UITableViewCell {
@@ -43,7 +44,7 @@ class DSBulletCell: UITableViewCell {
     }
     
     @IBAction func unitButtonPressed(_ sender: Any) {
-        
+        self.delegate?.unitButtonPressed(for: self)
     }
     
 }

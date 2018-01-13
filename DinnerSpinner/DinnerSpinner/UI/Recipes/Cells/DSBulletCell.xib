@@ -60,6 +60,9 @@
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <state key="normal" title="Unit"/>
+                        <connections>
+                            <action selector="unitButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ql5-QW-TZd"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

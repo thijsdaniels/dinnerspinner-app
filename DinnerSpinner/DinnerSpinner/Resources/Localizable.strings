@@ -6,6 +6,10 @@
   Copyright © 2018 Digithio. All rights reserved.
 */
 
+// BUTTONS
+"button_cancel" = "Cancel";
+"button_ok" = "OK";
+
 // RECIPES
 
 "recipes_add_ingredient" = "Add ingredient";
