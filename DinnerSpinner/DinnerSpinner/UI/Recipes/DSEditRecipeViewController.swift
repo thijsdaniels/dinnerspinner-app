@@ -16,7 +16,7 @@ enum EditRecipeCellType {
     case Duration
 }
 
-class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate, DSAddButtonCellDelegate, UIPickerDelegate {
+class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DSBulletCellDelegate, DSAddButtonCellDelegate, DSImageCellDelegate, UIPickerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     var editRecipeArr = [[String: Any]]()
@@ -24,8 +24,10 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
     var stepsArr = [String]()
     
     var dsBulletCell: DSBulletCell?
+    var dsImageCell: DSImageCell?
     
     fileprivate var picker: UIPicker?
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,8 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         picker = UIPicker(parentViewController: self)
         picker?.delegate = self
         picker?.set(items: ["1", "2", "3"])
+        
+        imagePicker.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,6 +84,7 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         if (editRecipeArr[indexPath.section]["type"] as? String == "image") {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "DSImageCell", for: indexPath) as? DSImageCell {
                 cell.setupCell()
+                cell.delegate = self
                 return cell
             }
         } else if (editRecipeArr[indexPath.section]["type"] as? String == "name") {
@@ -177,7 +182,18 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
         self.tableview.reloadData()
     }
     
-    // MARK: UIPickerDelegate
+    // MARK - DSImageCellDelegate
+    
+    func addImageButtonPressed(for imageCell: DSImageCell) {
+        // Open image picker
+        self.dsImageCell = imageCell
+        imagePicker.allowsEditing = false
+        //imagePicker.sourceType = [.photoLibrary, .camera]
+        
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    // MARK - UIPickerDelegate
     
     @objc func pickerCancelAction() {
         picker?.endPicking()
@@ -214,6 +230,19 @@ class DSEditRecipeViewController: UIViewController, UITableViewDelegate, UITable
     
     func pickerView(didSelect value: String, inRow row: Int, delegatedFrom pickerView: UIPicker) {
         print("\(value)")
+    }
+    
+    // MARK - UIImagePickerControllerDelegate
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            dsImageCell?.addImageButton.backgroundColor = UIColor.clear
+            dsImageCell?.addImageButton.setTitle("", for: .normal)
+            dsImageCell?.recipeImageView.contentMode = .scaleToFill
+            dsImageCell?.recipeImageView.image = pickedImage
+        }
+        
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

@@ -17,3 +17,5 @@
 "recipes_amount" = "Amount";
 "recipes_ingredient" = "Ingredient";
 "recipes_step" = "Step";
+"recipes_name" = "Name";
+"recipes_duration" = "Duration";

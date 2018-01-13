@@ -16,6 +16,7 @@ class DSDurationCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.textField.placeholder = "recipes_duration".localized
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
